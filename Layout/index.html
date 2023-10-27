@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-container">
+        <h1 id="head">Layout</h1>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list-item"><a href="">Home</a></li>
+            <li class="nav-list-item"><a href="">Languages</a></li>
+            <li class="nav-list-item"><a href="">Forum</a></li>
+            <li class="nav-list-item"><a href="">About</a></li>
+          </ul>
+        </nav>
+        <div class="sign">
+          <form>
+            <label for="login">Login</label>
+            <input type="text" id="login" placeholder="Login" />
+            <br />
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" />
+            <br />
+            <button class="sign-up">Sign Up</button>
+            <button class="sign-in">Sign In</button>
+          </form>
+        </div>
+      </header>
+      <main class="main" id="main">
+        <button onclick="outputHello()">Get Info</button>
+        <button onclick="outputBody()">Get Body Info</button>
+        <button onclick="clearContent()">Clear Content</button>
+        <div id="creator">
+          <label for="creator-input">Element</label>
+          <input type="text" id="creator-input" placeholder="Element" />
+          <button onclick="createEl()">Create Element</button>
+        </div>
+        <p id="clear-pointer">Content</p>
+      </main>
+      <div class="sidebar">
+        <p>Sidebar</p>
+      </div>
+      <footer class="footer">
+        <p>Footer</p>
+        <p>&copy; Copyright 2022-2024</p>
+      </footer>
+    </div>
+  </body>
+</html>
